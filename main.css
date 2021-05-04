@@ -334,3 +334,116 @@ img.product-add__img {
     display: flex;
     justify-content: center;
 }
+
+.tricks-title {
+    margin-bottom: 32px;
+    padding-top: 44px;
+}
+
+.tricks-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.tricks-item {
+    width: 390px;
+    transition: 0.2s;
+    box-shadow: none;
+}
+
+
+.tricks-item__title {
+    padding: 16px 15px 45px 16px;
+    
+}
+
+
+.tricks-item__title h4 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    width: 90%;
+    margin-bottom: 8px;
+}
+
+.tricks-item__date {
+    padding: 0 0 16px 16px;
+}
+
+
+.tricks-item__title p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+
+.tricks-item:hover {
+    box-shadow: 4px 4px 8px 4px rgb(34 60 80 / 20%);
+}
+
+
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #D8D8D8;
+}
+
+
+.footer-item {
+    padding: 49px 0 50px; 
+    /* width: 250px;   */
+}
+
+
+.width-250px {
+    width: 250px; 
+}
+
+.footer-item h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    margin-bottom: 16px;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+.footer-svg {
+    display: inline;
+    margin-right: 8px;
+}
+
+
+.footer-text + .footer-text {
+    margin-top: 16px;
+}
+
+
+.footer-input {
+    display: flex;
+}
+
+.footer__input {
+    background-color: #F4F5F7;
+    
+}
+
+
+.input-btn {
+    background-color:  #E89F71;
+    width: 45px;
+    height: 45px;
+}
+
+
+.input-img {
+    margin: auto;
+}
