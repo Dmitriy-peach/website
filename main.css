@@ -343,6 +343,9 @@ img.product-add__img {
 .tricks-items {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D8D8D8;
+
 }
 
 
@@ -384,16 +387,19 @@ img.product-add__img {
 }
 
 
+#footer {
+    padding-top: 20px;
+    background-color: #F9F1E7;
+}
+
 .footer-items {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #D8D8D8;
 }
 
 
 .footer-item {
     padding: 49px 0 50px; 
-    /* width: 250px;   */
 }
 
 
@@ -441,9 +447,15 @@ img.product-add__img {
     background-color:  #E89F71;
     width: 45px;
     height: 45px;
+    transition: 0.2s;
 }
 
 
 .input-img {
     margin: auto;
+}
+
+
+.input-btn:hover {
+background-color: rgba(58, 58, 58, 0.72);
 }
