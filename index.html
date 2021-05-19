@@ -374,6 +374,43 @@
 			</div>
 		</div>
 	</section>
+	<section class="gallery">
+		<div class="container">
+			<h2 class="tricks-title">#FuniroFurniture</h2>
+			<div class="gallery__row">
+				<div class="gallery__text">
+					<h3>50+ Beautiful rooms<br> inspiration</h3>
+					<p>Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+					<button class="products-button button--text button-bckg--white button-color--orange button--size-16">Show More</button>
+				</div>
+				<div class="slider">
+					<div class="siema-calculator-container">
+					<div class="siema__prev" onclick="Slider.prev();">
+						<img src="./img/left-arrow.svg">
+					</div>
+					<div class="siemaCalc" style="overflow: hidden; direction: ltr; cursor: -webkit-grab;">
+						<div class="slider-image">
+							<img src="./img/slider-1.jpg">
+						</div>
+						<div class="slider-image">
+							<img src="./img/slider-2.jpg">
+						</div>
+						<div class="slider-image">
+							<img src="./img/slider-3.jpg">
+						</div>
+						<div class="slider-image">
+							<img src="./img/slider-4.jpg">
+						</div>
+					</div>
+					<div class="siema__next" onclick="Slider.next();">
+						<img src="./img/right-arrow.svg">
+					</div>
+				</div>
+			</div>
+			</div>	
+		</div>
+
+	</section>
 	<section class="tricks">
 		<div class="container">
 			<h2 class="tricks-title">Tips & Tricks</h2>
@@ -450,6 +487,32 @@
 			</div>
 		</div>
 	</footer>
+	
+	<script src="slider.js"></script>
+	<script>
+	
+	   const Slider = new SiemaSlider({
+        // Параметры
+        selector: '.siemaCalc',
+        duration: 500,
+        easing: 'ease-out',
+        startIndex: 0,
+        draggable: true,
+        multipleDrag: true,
+        threshold: 20,
+        loop: true,
+        dots: true,
+
+        onInit: function () {
+            this.addDots();
+            this.updateDots();
+        },
+
+        onChange: function () {
+            this.updateDots()
+        },
+    });
+	</script>
 	
 </body>
 </html>

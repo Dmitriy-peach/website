@@ -71,7 +71,7 @@ button {
 }
 .search-btn::before {
     content:"";
-    width: 98%;
+    width: 20px;
     height: 100%;
     left: 2%;
     position: absolute;
@@ -459,3 +459,83 @@ img.product-add__img {
 .input-btn:hover {
 background-color: rgba(58, 58, 58, 0.72);
 }
+
+.gallery {
+	background-color: #FCF8F3;
+	margin: 50px 0;
+	padding-bottom: 45px;
+}
+
+.gallery__row {
+	display: flex;
+    justify-content: space-around;
+	margin-top: 50px;
+}
+
+.gallery__text {
+	width: 40%;
+    height: fit-content;
+    margin: auto 0;
+}
+
+.gallery__text h3 {
+	font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.gallery__text p {
+	font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+/* slider */
+
+.siema-calculator-container {
+    max-height: 400px;
+    overflow: hidden;
+	margin: 0 auto;
+    position: relative;
+    width: 350px;
+}
+
+.siema__prev {
+	position: absolute;
+    top: 40%;
+    z-index: 10;
+    left: 5px;
+    cursor: pointer;
+}
+
+.siema__next {
+	   position: absolute;
+    top: 40%;
+    z-index: 10;
+    right: 5px;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+	margin-top: 25px;
+}
+
+.pagination__item {
+    width: 12px;
+    height: 12px;
+    display: block;
+    margin: 0 6px;
+    padding: 0;
+    min-height: auto;
+    background-color: #cbcbcb;
+	border-radius: 50%;
+}
+
+.pagination__item.pagination__item--active {
+    background-color: #E89F71;
+}
+
